@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+    .red{color:red;font-weight:bold;font-style:italic;text-align:center}
+    .orange{color:orange;text-align:center}
+    .black{color:black;text-align:center;font-weight:lighter;font-style:oblique}
+    .all{color:orange}
+    .blue{color:blue}
+    .gray{color:gray}
+    body{background-repeat:no-repeat;opacity:0.8;width: 1326px;height: 272px;color:blue;text-align: center;}
+    a{text-align:center;color:red;}
+	.js{text-align:center}
+	.slideshow-container{max-width: 100%;position: relativemargin: auto;}
+	.mySlides {display: none;max-width: 100%;}
+    </style>
+    <title>陈溯的个人主页</title>
+	<link rel="shortcut icon" href="pop.ico">
+	<script language=JavaScript>
+	    var msg = "陈溯的个人主页"
+	    var speed = 300;
+	    var msgud = " " + msg;
+	    function titleScroll() {
+	    if (msgud.length <msg.length) msgud += " - " + msg;
+	    msgud = msgud.substring(1, msgud.length);
+	    document.title = msgud.substring(0, msg.length);
+	    window.setTimeout("titleScroll()", speed);
+	    }
+	</script>
+	<script language="JavaScript">
+		function showtime() {
+			var now_time = new Date();
+			var hours = now_time.getHours();
+			var minutes = now_time.getMinutes();
+			var seconds = now_time.getSeconds();
+			var timer = "" + ((hours > 12) ? hours - 12 : hours);
+			timer += ((minutes < 10) ? ":0" : ":") + minutes;
+			timer += ((seconds < 10) ? ":0" : ":") + seconds;
+			timer += " " + ((hours > 12) ? "下午" : "上午");
+			document.clock.show.value = timer;
+			setTimeout("showtime()", 1000);
+		}
+	</script>
+	<script type="text/javascript">
+		function MM_popupMsg(msg) {
+			alert(msg);
+		}
+		 window.onload = function() {
+		      showtime(); // 调用函数1
+		      titleScroll(); // 调用函数2
+		    };
+	</script>
+	</head>
+	<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="https://deq3000ren7cs.github.io">首页</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item active">
+			<a class="nav-link" href="https://code.xueersi.com">学而思编程社区 <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+			  工具
+			</a>
+			<div class="dropdown-menu">
+			  <a class="dropdown-item" href="网页计算器4.0.html">网页计算器</a>
+			  <a class="dropdown-item" href="留言板.html">留言板</a>
+			</div>
+		  </li>
+		  <li class="nav-item dropdown">
+		  	<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+				游戏
+		  	</a>
+		  	<div class="dropdown-menu">
+		  		<a class="dropdown-item" href="Eaglecraft.html">网页版mc1.8（只可联机）</a>
+				<a class="dropdown-item" href="mc.html">网页版mc1.5（只可联机）</a>
+				<a class="dropdown-item" href="m152.html">网页版mc1.5.2(可单双机)</a>
+				<a class="dropdown-item" href="https://4399.com">4399</a>
+				<a class="dropdown-item" href="https://crazygame.com">crazygames</a>
+		  	</div>
+		  </li>
+		  <li class="nav-item dropdown">
+		  	<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+		  		网页
+		  	</a>
+		  	<div class="dropdown-menu">
+		  		<a class="dropdown-item" href="https://im.popoim.com/im/web">泡泡im</a>
+				<a class="dropdown-item" href="deqecraft工作室招人.html">工作室招人</a>
+				<a class="dropdown-item" href="https://deqecraftwr.github.io">deqecraft工作室官网</a>
+		  	</div>
+		  </li>
+		  <li class="nav-item active">
+		  			<a class="nav-link" href="关于我.html">关于我 <span class="sr-only">(current)</span></a>
+		  </li>
+		</ul>
+		<div class="js" style="color:gray">
+			<script language="JavaScript">
+				today = new Date();
+		
+				function initArray() {
+					this.length = initArray.arguments.length
+					for (var i = 0; i < this.length; i++)
+						this[i + 1] = initArray.arguments[i]
+				}
+				var d = new initArray(
+					"星期日",
+					"星期一",
+					"星期二",
+					"星期三",
+					"星期四",
+					"星期五",
+					"星期六");
+				document.write(
+					"<font style='font-size:9pt;font-family:宋体'>",
+					today.getYear() + 1900, "年",
+					today.getMonth() + 1, "月",
+					today.getDate(), "日",
+					d[today.getDay() + 1],
+					"</font>");
+			</script>
+			<form name="clock" onSubmit="0">
+				<input type="text" name="show" size="10" />
+			</form>
+		</div>
+		<form class="form-inline my-2 my-lg-0">
+		  <input class="form-control mr-sm-2" type="text" placeholder="Search(还未完善)" aria-label="Search">
+		  <button class="btn btn-outline-success my-2 my-sm-0">搜索</button>
+        </form>
+	  </div>
+	</nav>
+	<div class="slideshow-container">
+	  <div class="mySlides">
+		<img src="mc.webp" style="width:100%" width="350" height="400">
+	  </div>
+
+	  <div class="mySlides">
+		<img src="mc2.webp" style="width:100%" width="350" height="400">
+	  </div>
+
+	  <div class="mySlides">
+		<img src="mc3.webp" style="width:100%" width="350" height="400">
+	  </div>
+	</div>
+	<br>
+	<br>
+	<div class="alert alert-success" role="alert">
+	  <h4 class="alert-heading">欢迎!</h4>
+	  <p>此墙是挑选C站精品转载过来的（如有不喜，联系qq：3445205294删除或C站搜索陈溯联系我）</p>
+	  <hr>
+	  <p class="mb-0">投稿请联系我！qq：3445205294删除或C站搜索陈溯联系我</p>
+	  <p class="mb-0">还在开发中！功能可能欠缺！</p>
+	</div>
+	
+	<div class="card mb-3" style="max-width: 540px;">
+	  <div class="row no-gutters">
+	    <div class="col-md-4">
+	      <img src="https://livefile.xesimg.com/programme/assets/15f717aedb110bf74d2aa784fedc7575.jpg?x-oss-process=image/resize,w_750/format,webp" width="200" height="200">
+	    </div>
+	    <div class="col-md-8">
+	      <div class="card-body">
+	        <h5 class="card-title">#教程#如何任意修改网页内容</h5>
+	        <p class="card-text">转载自 白 </p>
+	        <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=19393334&version=offline&form=python&langType=python">点此处跳转</a>
+			<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<br>
+	<br>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+   <script language = "JavaScript">
+        var cur = new Date();
+        var year = cur.getYear();
+        var months = cur.getMonth();
+        var day = cur.getDate();
+        var hours = cur.getHours();
+        var se = cur.getMinutes();
+        var de = cur.getSeconds();
+        alert("欢迎来到我的个人主页!")
+        alert("现在时间"+(months+1)+"月"+day+"日"+hours+"时"+se+"分"+de+"秒");
+        alert("本作品因为背景图和bootstrap加载可能会很慢请稍等")
+        alert("太慢？复制该网址进入备用线路：https://42d30581-preview-free.lightly.teamcode.com/deq3000ren/index.html?server=preview&dcsId=42d30581&token=b00L89n7RquVYJJ5CiGeuw")
+		  var slideIndex = 0;
+		  showSlides();
+		function showSlides() {
+		    var i;
+		    var slides = document.getElementsByClassName("mySlides");
+		    for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";
+		    }
+		    slideIndex++;
+		    if (slideIndex > slides.length) {slideIndex = 1}
+		    slides[slideIndex-1].style.display = "block";
+			setTimeout(showSlides, 2000); // 切换时间间隔为 2 秒
+		}
+        </script>
+</body>
+    
+</html>
